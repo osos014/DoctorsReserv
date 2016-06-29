@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPAGE.master.cs" Inherits="WebApplication2.masterPAGE" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server" class="clearfix">
+    <title>My Master Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/responsive-nav.css" />
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+    <%--mira.aspx stylesheets--%>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'/>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <header style="margin-top:0px;margin-bottom:0px;">
+        <div class="logo col-md-3">
+            <h2 class="logo-text">The Doctors</h2>
+        </div>
+        <nav class="clearfix">
+            <ul class="clearfix">
+                <li><a href="Home Page Drs_Users.aspx">Home</a></li>
+                <li><a href="#">our business</a></li>
+                <li><a href="#">how we help</a></li>
+                <li><a href="Contact.aspx" class="last">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <div style="padding-top:70px;display:block;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       </div>
+    
+    
+</body>
+</html>
